@@ -4,6 +4,7 @@
 *.log
 *.retry
 *~
+/.direnv
 /.env
 /.idea/
 /.lein-*
