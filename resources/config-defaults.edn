@@ -522,4 +522,7 @@
  ;; from noon (12:00) until five (17:00) in the evening.
  ;;
  ;; As few or as many periods can be defined.
- :buzy-hours nil}
+ :buzy-hours nil
+
+ :entitlement-overviews []
+}

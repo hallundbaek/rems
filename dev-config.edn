@@ -119,4 +119,15 @@
                     :logging true}
 
  :enable-voting true
- :tables {:rems.catalogue/catalogue {:paging? false}}}
+ :tables {:rems.catalogue/catalogue {:paging? false}}
+
+ :entitlement-overviews [{:resource "urn:nbn:fi:lb-201403262"
+                          :columns [{:selector {:key "application/applicant"}
+                                     :value  "name"
+                                     :header "Name"}
+                                    {:selector {:key "application/forms"
+                                                :selector {:key "form/fields"
+                                                           :selector {:key "field/id"
+                                                                      :value "fld2"}}}
+                                     :value "field/value"
+                                     :header "Description"}]}]}
